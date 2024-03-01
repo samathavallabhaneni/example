@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <button onClick="suvarna()" id="btn">Click me:</button>
+    <button onClick="samatha()" id="btn1">Click me1:</button>
+    <script defer>
+      let button = document.getElementById("btn").style.visibility = "visible";
+      function suvarna() {
+        let a = 5;
+        let fact = 1;
+        var i;
+        for (i = a; i >= 1; i--) {
+          fact = fact * i;
+        }
+        document.getElementById("demo").innerText = "fact value: " + fact;
+        document.getElementById("btn").style.visibility = "hidden";
+      }
+      let button1 = document.getElementById("btn1").style.visibility = "visible";
+      function samatha() {
+        let a=0;
+        let b=1;
+        let c;
+        
+      }
+    </script>
+  </body>
+</html>

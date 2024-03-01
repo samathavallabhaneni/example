@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsFunctions</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="sam"></p>
+    <p id="su"></p>
+    <p id="gayi"></p>
+    <script>
+        function MyFunction(p1,p2) {
+            return p1*p2;
+        }
+        var result = MyFunction(4,3);
+        document.getElementById("demo").innerHTML = "<h3>Example1</h3> <br>The Multiplication is:" +result;
+        function degrees(f) {
+            return((5/9)*(f-32));
+        }
+        let value=degrees(77);
+        document.getElementById("sam").innerHTML = "<h3>Example2</h3> <br> The conversion of degrees is:"+value;
+        let text = "<h3>Example3</h3> <br> Outside: " + typeof carName;
+        document.getElementById("su").innerHTML = text;
+        function myFunction() {
+        let carName = "Volvo";
+        let text = "Inside: " + typeof carName + " " + carName; 
+        document.getElementById("gayi").innerHTML = text;
+        }
+        myFunction();
+    </script>
+</body>
+</html>
